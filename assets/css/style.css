@@ -1794,3 +1794,14 @@ section {
     max-width: 150px; /* Ajusta el tamaño máximo del logo según sea necesario */
     z-index: 1; /* Asegura que esté por encima de la imagen de fondo */
 }
+
+.back-to-top {
+    background: #4063ff;
+    color: #fff !important;
+    font-size: 30px;
+}
+
+.back-to-top:hover {
+    background: #4063ff;
+    color: #fff !important;
+}
