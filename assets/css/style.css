@@ -1805,3 +1805,19 @@ section {
     background: #4063ff;
     color: #fff !important;
 }
+
+.logo-xs {
+    width: 50px;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    padding: var(--bs-modal-header-padding);
+    border-bottom: var(--bs-modal-header-border-width) solid
+        var(--bs-modal-header-border-color);
+    border-top-left-radius: var(--bs-modal-inner-border-radius);
+    border-top-right-radius: var(--bs-modal-inner-border-radius);
+    color: #522db2;
+}
