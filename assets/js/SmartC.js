@@ -3,10 +3,10 @@ var modalDialogSmartC = document.querySelector('.modal-dialog');
 var galleryImgSmartC = document.getElementById('galleryImgSmartC');
 var imageContainerSmartC = document.getElementById('imageContainerSmartC');
 var imagesSmartC = [
-  "/assets/img/slides/28.png",
-  "/assets/img/slides/29.png",
-  "/assets/img/slides/30.png",
-  "/assets/img/slides/31.png"
+  "/assets/img/slides/SmartCom1.jpg",
+  "/assets/img/slides/SmartCom2.jpg",
+  "/assets/img/slides/SmartCom3.jpg",
+  "/assets/img/slides/SmartCom4.jpg"
 ];
 var currentIndexSmartC = 0;
 
