@@ -3,9 +3,9 @@ var modalDialogModeloCX = document.querySelector('.modal-dialog');
 var galleryImgModeloCX = document.getElementById('galleryImgModeloCX');
 var imageContainerModeloCX = document.getElementById('imageContainerModeloCX');
 var imagesModeloCX = [
-  "/assets/img/slides/32-0.jpg",
-  "/assets/img/slides/32.png",
-  "/assets/img/slides/32-1.jpg",
+  "/assets/img/slides/modeloCX1.png",
+  "/assets/img/slides/modeloCX2.png",
+  "/assets/img/slides/modeloCX3.png"
 ];
 var currentIndex = 0;
 
