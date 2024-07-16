@@ -3,13 +3,7 @@ var modalDialog = document.querySelector('.modal-dialog');
 var galleryImgMapas = document.getElementById('galleryImgMapas');
 var imageContainerMapas = document.getElementById('imageContainerMapas');
 var imagesMapas = [
-  "/assets/img/slides/1.png",
-  "/assets/img/slides/2.png",
-  "/assets/img/slides/3.jpg",
-  "/assets/img/slides/4.jpg",
-  "/assets/img/slides/5.jpg",
-  "/assets/img/slides/6.jpg",
-  "/assets/img/slides/7.jpg"
+  "/assets/img/slides/mapa1.jpg"
 ];
 var currentIndex = 0;
 
@@ -34,17 +28,17 @@ function adjustModalSize() {
   modalDialog.style.maxHeight = maxHeight + 'px';
 }
 
-document.getElementById("prevBtnMapas").onclick = function () {
-  currentIndex = (currentIndex > 0) ? currentIndex - 1 : imagesMapas.length - 1;
-  galleryImgMapas.src = imagesMapas[currentIndex];
-  adjustModalSize();
-}
+// document.getElementById("prevBtnMapas").onclick = function () {
+//   currentIndex = (currentIndex > 0) ? currentIndex - 1 : imagesMapas.length - 1;
+//   galleryImgMapas.src = imagesMapas[currentIndex];
+//   adjustModalSize();
+// }
 
-document.getElementById("nextBtnMapas").onclick = function () {
-  currentIndex = (currentIndex < imagesMapas.length - 1) ? currentIndex + 1 : 0;
-  galleryImgMapas.src = imagesMapas[currentIndex];
-  adjustModalSize();
-}
+// document.getElementById("nextBtnMapas").onclick = function () {
+//   currentIndex = (currentIndex < imagesMapas.length - 1) ? currentIndex + 1 : 0;
+//   galleryImgMapas.src = imagesMapas[currentIndex];
+//   adjustModalSize();
+// }
 
 // Ajustar el tamaño del modal cuando se muestra
 $('#myModalMapas').on('shown.bs.modal', function () {

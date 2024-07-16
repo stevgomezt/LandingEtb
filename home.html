@@ -425,15 +425,19 @@
           </div>
 
           <div class="col-md-4 services-padding">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/journey/JA-3.png" alt="">
-              <div class="icon"></div>
-              <h4 class="title"><a href="https://lookerstudio.google.com/reporting/5a21d98a-b974-4616-ae7d-3f0a18e01692"
-                  target="_blank">Perfil del Cliente</a></h4>
-              <p class="description">Concepto perfil SAC <br>
-                Perfiles
-              </p>
-            </div>
+            <button class="button-like" id="openModalBtnPerfilCli">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/img/journey/JA-3.png" alt="">
+                <div class="icon"></div>
+                <h4 class="title"><a href="#" onclick="event.preventDefault()">Perfil del Cliente</a></h4>
+                <p class="description">Concepto perfil SAC <br>
+                  Perfiles &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                </p>
+              </div>
+            </button>
           </div>
         </div>
 
@@ -444,7 +448,7 @@
               <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                 <img src="assets/img/journey/JA-1.png" alt="">
                 <div class="icon"></div>
-                <h4 class="title"><a href="#" onclick="event.preventDefault()">Mapas</a></h4>
+                <h4 class="title"><a href="#" onclick="event.preventDefault()">Entendimiento Geografico</a></h4>
                 <p class="description">Mapa SAC &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -619,6 +623,31 @@
     </div>
   </div>
 
+  <!-- myModalPerfilCli -->
+  <div class="modal fade" id="myModalPerfilCli" tabindex="-1" role="dialog" aria-labelledby="myModalPerfilCliLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg-custom" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalPerfilCliLabel">Perfil del Cliente</h5>
+        </div>
+        <div class="modal-body text-center">
+          <div class="d-flex justify-content-center align-items-center">
+            <button class="btn btn-secondary navButton" id="prevBtnPerfilCli"> Anterior</button>
+            <div id="imageContainerPerfilCli" class="image-container mx-2">
+              <img id="galleryImgPerfilCli" src="assets/img/slides/perfilCli1.jpg" class="gallery-img" alt="Imagen">
+            </div>
+            <button class="btn btn-secondary navButton" id="nextBtnPerfilCli">Siguiente </button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <img src="/assets/img/logos/logodoblexs.png" alt="" class="logo-xs"><img src="/assets/img/logos/etbxs.png"
+            alt="" class="logo-xs">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- myModalModeloCX -->
   <div class="modal fade" id="myModalModeloCX" tabindex="-1" role="dialog" aria-labelledby="myModalModeloCXLabel"
     aria-hidden="true">
@@ -719,15 +748,17 @@
     <div class="modal-dialog modal-dialog-centered modal-lg-custom" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="myModalBILabel">Mapas</h5>
+          <h5 class="modal-title" id="myModalBILabel">Entendimiento geografico</h5>
         </div>
         <div class="modal-body text-center">
           <div class="d-flex justify-content-center align-items-center">
-            <button class="btn btn-secondary navButton" id="prevBtnMapas"> Anterior</button>
+            <!-- <button class="btn btn-secondary navButton" id="prevBtnMapas"> Anterior</button> -->
             <div id="imageContainerMapas" class="image-container mx-2">
-              <img id="galleryImgMapas" src="assets/img/slides/1.png" class="gallery-img" alt="Imagen">
+              <a href="mapa_movil.html" target="_blank">
+                <img id="galleryImgMapas" src="assets/img/slides/mapa1.jpg" class="gallery-img" alt="Imagen">
+              </a>
             </div>
-            <button class="btn btn-secondary navButton" id="nextBtnMapas">Siguiente </button>
+            <!-- <button class="btn btn-secondary navButton" id="nextBtnMapas">Siguiente </button> -->
           </div>
         </div>
         <div class="modal-footer">
@@ -797,6 +828,7 @@
   <script src="assets/js/InvestigacionMer.js"></script>
   <script src="assets/js/mapas.js"></script>
   <script src="assets/js/ia.js"></script>
+  <script src="assets/js/PerfilCli.js"></script>
 
 </body>
 
