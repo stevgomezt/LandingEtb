@@ -3,15 +3,15 @@ var modalDialogPerfilCli = document.querySelector('.modal-dialog');
 var galleryImgPerfilCli = document.getElementById('galleryImgPerfilCli');
 var imageContainerPerfilCli = document.getElementById('imageContainerPerfilCli');
 var imagesPerfilCli = [
-  "/assets/img/slides/PerfilCli1.jpg",
-  "/assets/img/slides/PerfilCli2.jpg",
-  "/assets/img/slides/PerfilCli3.jpg",
-  "/assets/img/slides/PerfilCli4.jpg",
-  "/assets/img/slides/PerfilCli5.jpg",
-  "/assets/img/slides/PerfilCli6.jpg",
-  "/assets/img/slides/PerfilCli7.jpg",
-  "/assets/img/slides/PerfilCli8.jpg",
-  "/assets/img/slides/PerfilCli9.jpg"
+  "/assets/img/slides/perfilCli1.jpg",
+  "/assets/img/slides/perfilCli2.jpg",
+  "/assets/img/slides/perfilCli3.jpg",
+  "/assets/img/slides/perfilCli4.jpg",
+  "/assets/img/slides/perfilCli5.jpg",
+  "/assets/img/slides/perfilCli6.jpg",
+  "/assets/img/slides/perfilCli7.jpg",
+  "/assets/img/slides/perfilCli8.jpg",
+  "/assets/img/slides/perfilCli9.jpg"
 ];
 var currentIndexPerfilCli = 0;
 
