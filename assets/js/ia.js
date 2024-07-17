@@ -4,7 +4,7 @@ var modalDialogIA = modalIA.querySelector('.modal-dialog');
 var galleryImgIA = document.getElementById('galleryImgIA');
 var imageContainerIA = document.getElementById('imageContainerIA');
 var imagesIA = [
-  "/assets/img/slides/33.png",
+  // "/assets/img/slides/33.png",
   "/assets/img/slides/34.png",
   "/assets/img/slides/35.png"
 ];
