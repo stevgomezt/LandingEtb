@@ -3,7 +3,7 @@ var modalDialog = document.querySelector('.modal-dialog');
 var galleryImgMapas = document.getElementById('galleryImgMapas');
 var imageContainerMapas = document.getElementById('imageContainerMapas');
 var imagesMapas = [
-  "/assets/img/slides/mapa1.jpg"
+  "/assets/img/slides/modelosAten.jpg"
 ];
 var currentIndex = 0;
 
