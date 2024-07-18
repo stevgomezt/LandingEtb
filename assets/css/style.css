@@ -1910,3 +1910,297 @@ section {
 .icon-animado {
     margin-top: 10px;
 }
+
+.li-nuestraexp {
+    perspective: 400px;
+}
+
+.info {
+    transform: rotate3d(1, 0, 0, 90deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    pointer-events: none;
+    background-color: rgba(110, 110, 110, 0.815);
+    display: flex; /* Utiliza Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.in-top .info {
+    transform-origin: 50% 0%;
+    -webkit-animation: in-top 500ms ease 0ms 1 forwards;
+    animation: in-top 500ms ease 0ms 1 forwards;
+}
+
+.in-right .info {
+    transform-origin: 100% 0%;
+    -webkit-animation: in-right 500ms ease 0ms 1 forwards;
+    animation: in-right 500ms ease 0ms 1 forwards;
+}
+
+.in-bottom .info {
+    transform-origin: 50% 100%;
+    -webkit-animation: in-bottom 500ms ease 0ms 1 forwards;
+    animation: in-bottom 500ms ease 0ms 1 forwards;
+}
+
+.in-left .info {
+    transform-origin: 0% 0%;
+    -webkit-animation: in-left 500ms ease 0ms 1 forwards;
+    animation: in-left 500ms ease 0ms 1 forwards;
+}
+
+.out-top .info {
+    transform-origin: 50% 0%;
+    -webkit-animation: out-top 500ms ease 0ms 1 forwards;
+    animation: out-top 500ms ease 0ms 1 forwards;
+}
+
+.out-right .info {
+    transform-origin: 100% 50%;
+    -webkit-animation: out-right 500ms ease 0ms 1 forwards;
+    animation: out-right 500ms ease 0ms 1 forwards;
+}
+
+.out-bottom .info {
+    transform-origin: 50% 100%;
+    -webkit-animation: out-bottom 500ms ease 0ms 1 forwards;
+    animation: out-bottom 500ms ease 0ms 1 forwards;
+}
+
+.out-left .info {
+    transform-origin: 0% 0%;
+    -webkit-animation: out-left 500ms ease 0ms 1 forwards;
+    animation: out-left 500ms ease 0ms 1 forwards;
+}
+
+@-webkit-keyframes in-top {
+    from {
+        transform: rotate3d(-1, 0, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+@keyframes in-top {
+    from {
+        transform: rotate3d(-1, 0, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+@-webkit-keyframes in-right {
+    from {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+@keyframes in-right {
+    from {
+        transform: rotate3d(0, -1, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+@-webkit-keyframes in-bottom {
+    from {
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+@keyframes in-bottom {
+    from {
+        transform: rotate3d(1, 0, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+@-webkit-keyframes in-left {
+    from {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+@keyframes in-left {
+    from {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+@-webkit-keyframes out-top {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(-1, 0, 0, 104deg);
+    }
+}
+@keyframes out-top {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(-1, 0, 0, 104deg);
+    }
+}
+@-webkit-keyframes out-right {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(0, -1, 0, 104deg);
+    }
+}
+@keyframes out-right {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(0, -1, 0, 104deg);
+    }
+}
+@-webkit-keyframes out-bottom {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(1, 0, 0, 104deg);
+    }
+}
+@keyframes out-bottom {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(1, 0, 0, 104deg);
+    }
+}
+@-webkit-keyframes out-left {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 104deg);
+    }
+}
+@keyframes out-left {
+    from {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 104deg);
+    }
+}
+/* you can ignore this ones */
+.ul-nuestraexp {
+    padding: 0;
+    margin: 0 0 50px;
+}
+.ul-nuestraexp:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.li-nuestraexp {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+}
+
+.li-nuestraexp a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.li-nuestraexp h3 {
+    margin-top: 30px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.li-nuestraexp p {
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.li-nuestraexp .normal {
+    width: 100%;
+    background-color: #fefefe;
+    text-align: center;
+    font-size: 50px;
+    line-height: 200px;
+}
+
+.li-nuestraexp .normal svg {
+    pointer-events: none;
+    width: 50px;
+}
+
+.li-nuestraexp .normal svg path {
+    fill: rgba(52, 73, 94, 0.2);
+}
+
+.image-container-nuestraexp {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.image-container-nuestraexp img {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-box2 {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    background: #fefefe;
+    box-shadow: 0 0 29px 0 rgba(76, 84, 107, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    height: 100%;
+}
+
+.nuestra-exp-margen {
+    margin-top: 10px;
+}
+
+.custom-img2 {
+    width: 75%;
+    height: auto;
+    border-radius: 15px; /* Para asegurarse de que la imagen siga el borde redondeado */
+}
+
+.titulos-exp{
+    font-size: 22px !important;
+}
