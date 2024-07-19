@@ -12,9 +12,7 @@ var imagesModeloPre = [
   "/assets/img/slides/modelosPre6.jpg",
   "/assets/img/slides/modelosPre7.jpg",
   "/assets/img/slides/modelosPre8.jpg",
-  "/assets/img/slides/modelosPre9.jpg",
-  "/assets/img/slides/modelosPre10.jpg",
-  "/assets/img/slides/modelosPre11.jpg",
+  "/assets/img/slides/modelosPre9.jpg"
 ];
 var currentIndexModeloPre = 0;
 
