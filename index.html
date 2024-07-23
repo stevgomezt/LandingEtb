@@ -9,7 +9,11 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <script type="module" src="/assets/js/firebaseauth.js"></script>
+    <!-- Incluye las bibliotecas de Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <!-- Enlaza el archivo app.js que contiene la lógica de autenticación -->
+    <script src="/assets/js/firebaseauth.js" defer></script>
     <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
@@ -18,7 +22,7 @@
         <img src="/assets/img/logos/Logo emergia.png" alt="Inicio de Sesión" style="width: 140px;">
         <img src="/assets/img/logos/etb.png" alt="Inicio de Sesión" style="width: 100px;" class="mb-3">
         <!-- <h1 class="form-title-login-form">Iniciar Sesión</h1> -->
-        <form method="post" action="">
+        <form method="post" action="" id="login-form">
             <div id="signInMessage" class="messageDiv" style="display:none;"></div>
             <div class="input-group-login-form">
                 <i class="fas fa-envelope"></i>

@@ -1,8 +1,7 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+// Verifica que el archivo firebaseauth.js se está ejecutando
+console.log('El archivo firebaseauth.js se está ejecutando');
 
-// Your web app's Firebase configuration
+// Configuración de Firebase
 const firebaseConfig = {
     apiKey: "AIzaSyDCVl7YzXjLpXPc_DRdA2Pv4HZ2eeeN2ks",
     authDomain: "landing-page-entel.firebaseapp.com",
@@ -12,40 +11,53 @@ const firebaseConfig = {
     appId: "1:526510505807:web:b8d3406479898802900f3a"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Inicializa Firebase
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+console.log('Firebase inicializado', auth); // Verifica que Firebase se inicializó correctamente
 
-function showMessage(message, divId) {
-    var messageDiv = document.getElementById(divId);
-    messageDiv.style.display = "block";
-    messageDiv.innerHTML = message;
-    messageDiv.style.opacity = 1;
-    setTimeout(function () {
-        messageDiv.style.opacity = 0;
-    }, 5000);
+// Función de login
+const loginForm = document.getElementById('login-form');
+if (loginForm) {
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        console.log('Formulario enviado, email:', email);
+
+        auth.signInWithEmailAndPassword(email, password)
+            .then(() => {
+                console.log('Inicio de sesión exitoso');
+                alert('Inicio de sesión exitoso'); // Alerta de inicio de sesión exitoso
+                window.location.href = '/home.html';
+            })
+            .catch((error) => {
+                console.error('Error durante el inicio de sesión:', error.message);
+                alert('Datos de inicio de sesión incorrectos'); // Alerta de datos incorrectos
+            });
+    });
 }
 
-const signIn = document.getElementById('submitSignIn');
-signIn.addEventListener('click', (event) => {
-    event.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const auth = getAuth();
+// Verifica si el usuario está logeado
+auth.onAuthStateChanged((user) => {
+    const currentPath = window.location.pathname;
+    console.log('Cambio en el estado de autenticación, usuario:', user); // Verifica el cambio en el estado de autenticación
+    if (user && currentPath.includes('/index.html')) {
+        window.location.href = '/home.html'; // Redirige a la página de inicio si el usuario está autenticado
+    } else if (!user && currentPath.includes('/home.html')) {
+        window.location.href = '/index.html'; // Redirige a la página de login si el usuario no está autenticado
+    }
+});
 
-    signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            showMessage('El Inicio de Sesión es Exitoso', 'signInMessage');
-            const user = userCredential.user;
-            localStorage.setItem('loggedInUserId', user.uid);
-            window.location.href = 'home.html';
-        })
-        .catch((error) => {
-            const errorCode = error.code;
-            if (errorCode === 'auth/invalid-credential') {
-                showMessage('Correo o Contraseña Incorrectos', 'signInMessage');
-            }
-            else {
-                showMessage('La cuenta no existe', 'signInMessage');
-            }
-        })
-})
+// Función de logout
+const logoutButton = document.getElementById('logout-button');
+if (logoutButton) {
+    logoutButton.addEventListener('click', () => {
+        auth.signOut().then(() => {
+            console.log('Cierre de sesión exitoso');
+            window.location.href = '/index.html'; // Redirige a la página de login después de cerrar sesión
+        }).catch((error) => {
+            console.error('Error durante el cierre de sesión:', error.message);
+        });
+    });
+}

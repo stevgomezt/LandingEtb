@@ -35,8 +35,13 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Incluye las bibliotecas de Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <!-- Enlaza el archivo app.js que contiene la lógica de autenticación -->
+  <script src="/assets/js/firebaseauth.js" defer></script>
+
   <!-- Scripts -->
-  <script type="module" src="/assets/js/homepage.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
@@ -61,7 +66,7 @@
           <li><a class="nav-link scrollto" href="#more-services">Nuestra Experiencia</a></li>
           <li><a class="nav-link scrollto" href="#services">Journey Analítico</a></li>
         </ul>
-        <button class="btn btn-primary" id="logout">Cerrar Sesión</button>
+        <button class="btn btn-primary" id="logout-button">Cerrar Sesión</button>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
       <!-- .navbar -->
@@ -644,7 +649,8 @@
                 <img src="assets/img/journey/JA-6.png" alt="">
                 <div class="icon"></div>
                 <h4 class="title"><a href="#" onclick="event.preventDefault()">Smart Communication</a></h4>
-                <p class="description">Rentabilización y profundización de productos a través de estrategias de comunicación con técnicas de copywriting.
+                <p class="description">Rentabilización y profundización de productos a través de estrategias de
+                  comunicación con técnicas de copywriting.
                 </p>
               </div>
             </button>
@@ -656,7 +662,8 @@
                 <img src="assets/img/journey/JA-7.png" alt="">
                 <div class="icon"></div>
                 <h4 class="title"><a href="#" onclick="event.preventDefault()">Modelos Predictivos</a></h4>
-                <p class="description">Propensión de ventas, fidelización, retención, early churn, recuperación y recobro con metodología de Machine Learning.
+                <p class="description">Propensión de ventas, fidelización, retención, early churn, recuperación y
+                  recobro con metodología de Machine Learning.
                 </p>
               </div>
             </button>
@@ -668,7 +675,8 @@
                 <img src="assets/img/journey/JA-9.png" alt="">
                 <div class="icon"></div>
                 <h4 class="title"><a href="#" onclick="event.preventDefault()">IA Generativa</a></h4>
-                <p class="description">Modelos Fundacionales Inteligencia Artificial Generativa, LLM's chatbots.git add . &nbsp;
+                <p class="description">Modelos Fundacionales Inteligencia Artificial Generativa, LLM's chatbots.git add
+                  . &nbsp;
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                   &nbsp; &nbsp; &nbsp; &nbsp;
