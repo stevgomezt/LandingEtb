@@ -26,8 +26,8 @@ function adjustModalSizeModeloCX() {
   // Aplicar el tamaño al contenedor de la imagen y al modal
   imageContainerModeloCX.style.maxWidth = maxWidth + 'px';
   imageContainerModeloCX.style.maxHeight = maxHeight + 'px';
-  ModeloCX.style.maxWidth = maxWidth + 'px';
-  modalDialog.style.maxHeight = maxHeight + 'px';
+  modalDialogModeloCX.style.maxWidth = maxWidth + 'px';
+  modalDialogModeloCX.style.maxHeight = maxHeight + 'px';
 }
 
 document.getElementById("prevBtnModeloCX").onclick = function () {

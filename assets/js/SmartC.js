@@ -27,8 +27,8 @@ function adjustModalSizeSmartC() {
   // Aplicar el tamaño al contenedor de la imagen y al modal
   imageContainerSmartC.style.maxWidth = maxWidth + 'px';
   imageContainerSmartC.style.maxHeight = maxHeight + 'px';
-  SmartC.style.maxWidth = maxWidth + 'px';
-  modalDialog.style.maxHeight = maxHeight + 'px';
+  modalDialogSmartC.style.maxWidth = maxWidth + 'px';
+  modalDialogSmartC.style.maxHeight = maxHeight + 'px';
 }
 
 document.getElementById("prevBtnSmartC").onclick = function () {

@@ -1,6 +1,5 @@
-// AnaliticaDesc Modal
 var modalAnaliticaDesc = document.getElementById('myModalAnaliticaDesc');
-var modalDAnaliticaDesclogAnaliticaDesc = modalAnaliticaDesc.querySelector('.modal-dAnaliticaDesclog');
+var modalDialogAnaliticaDesc = document.querySelector('.modal-dialog');
 var galleryImgAnaliticaDesc = document.getElementById('galleryImgAnaliticaDesc');
 var imageContainerAnaliticaDesc = document.getElementById('imageContainerAnaliticaDesc');
 var imagesAnaliticaDesc = [
@@ -27,8 +26,8 @@ function adjustModalSizeAnaliticaDesc() {
   // Aplicar el tamaño al contenedor de la imagen y al modal
   imageContainerAnaliticaDesc.style.maxWidth = maxWidth + 'px';
   imageContainerAnaliticaDesc.style.maxHeight = maxHeight + 'px';
-  modalDAnaliticaDesclogAnaliticaDesc.style.maxWidth = maxWidth + 'px';
-  modalDAnaliticaDesclogAnaliticaDesc.style.maxHeight = maxHeight + 'px';
+  modalDialogAnaliticaDesc.style.maxWidth = maxWidth + 'px';
+  modalDialogAnaliticaDesc.style.maxHeight = maxHeight + 'px';
 }
 
 document.getElementById("prevBtnAnaliticaDesc").onclick = function () {

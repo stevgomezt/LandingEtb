@@ -463,7 +463,7 @@ section {
 }
 
 .section-bg {
-    background-color: #f7fbfe;
+    background-color: #f1f1f1;
 }
 
 .section-title {
@@ -681,7 +681,34 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.services .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services .col-md-4 {
+    display: flex;
+    padding: 10px;
+}
+
+.services .button-like {
+    display: flex;
+    flex: 1;
+    min-height: 200px; /* Ajusta esto según tus necesidades */
+    max-height: 100%;
+}
+
 .services .icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
     padding: 30px;
     position: relative;
     overflow: hidden;
@@ -690,6 +717,7 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
+    width: 100%;
     height: 100%;
 }
 
@@ -737,10 +765,12 @@ section {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
+    text-align: center !important; /* Alinear el texto a la izquierda */
 }
 
 .services .title a {
     color: #111;
+    text-align: center !important; /* Asegurar que los enlaces también estén alineados a la izquierda */
 }
 
 .services .description {
@@ -2201,6 +2231,6 @@ section {
     border-radius: 15px; /* Para asegurarse de que la imagen siga el borde redondeado */
 }
 
-.titulos-exp{
+.titulos-exp {
     font-size: 22px !important;
 }

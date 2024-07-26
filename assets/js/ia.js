@@ -5,8 +5,8 @@ var galleryImgIA = document.getElementById('galleryImgIA');
 var imageContainerIA = document.getElementById('imageContainerIA');
 var imagesIA = [
   // "/assets/img/slides/33.png",
-  "/assets/img/slides/34.png",
-  "/assets/img/slides/35.png"
+  "/assets/img/slides/ia1.png",
+  "/assets/img/slides/ia2.png"
 ];
 var currentIndexIA = 0;
 

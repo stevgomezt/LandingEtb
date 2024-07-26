@@ -29,8 +29,8 @@ function adjustModalSizePerfilCli() {
   // Aplicar el tamaño al contenedor de la imagen y al modal
   imageContainerPerfilCli.style.maxWidth = maxWidth + 'px';
   imageContainerPerfilCli.style.maxHeight = maxHeight + 'px';
-  PerfilCli.style.maxWidth = maxWidth + 'px';
-  modalDialog.style.maxHeight = maxHeight + 'px';
+  modalDialogPerfilCli.style.maxWidth = maxWidth + 'px';
+  modalDialogPerfilCli.style.maxHeight = maxHeight + 'px';
 }
 
 document.getElementById("prevBtnPerfilCli").onclick = function () {
