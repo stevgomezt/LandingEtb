@@ -29,7 +29,7 @@ if (loginForm) {
             .then(() => {
                 console.log('Inicio de sesión exitoso');
                 alert('Inicio de sesión exitoso'); // Alerta de inicio de sesión exitoso
-                window.location.href = '/home.html';
+                window.location.href = '/menu.html';
             })
             .catch((error) => {
                 console.error('Error durante el inicio de sesión:', error.message);
@@ -38,14 +38,18 @@ if (loginForm) {
     });
 }
 
-// Verifica si el usuario está logeado
+// Verificación del estado de autenticación en las páginas protegidas
 auth.onAuthStateChanged((user) => {
     const currentPath = window.location.pathname;
     console.log('Cambio en el estado de autenticación, usuario:', user); // Verifica el cambio en el estado de autenticación
-    if (user && currentPath.includes('/index.html')) {
-        window.location.href = '/home.html'; // Redirige a la página de inicio si el usuario está autenticado
-    } else if (!user && currentPath.includes('/home.html')) {
-        window.location.href = '/index.html'; // Redirige a la página de login si el usuario no está autenticado
+    if (!user) {
+        if (currentPath.includes('/menu.html') || currentPath.includes('/home.html') || currentPath.includes('/homeoperaciones.html')) {
+            window.location.href = '/index.html'; // Redirige a la página de login si el usuario no está autenticado
+        }
+    } else {
+        if (currentPath.includes('/index.html')) {
+            window.location.href = '/menu.html'; // Redirige a la página de menú si el usuario está autenticado
+        }
     }
 });
 
