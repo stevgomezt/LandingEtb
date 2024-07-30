@@ -1727,8 +1727,8 @@ section {
 }
 
 .gallery-img {
-    max-width: 90%; /* Ancho máximo del 90% del contenedor */
-    max-height: 90%; /* Altura máxima del 90% del contenedor */
+    max-width: 80%; /* Ancho máximo del 90% del contenedor */
+    /* max-height: 90%; Altura máxima del 90% del contenedor */
     width: auto; /* Ancho automático para mantener la proporción */
     height: auto; /* Altura automática para mantener la proporción */
     display: block; /* Evita espacios en blanco adicionales debajo de la imagen */
@@ -1808,7 +1808,8 @@ section {
     flex-shrink: 0;
     align-items: center;
     padding: var(--bs-modal-header-padding);
-    border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+    border-bottom: var(--bs-modal-header-border-width) solid
+        var(--bs-modal-header-border-color);
     border-top-left-radius: var(--bs-modal-inner-border-radius);
     border-top-right-radius: var(--bs-modal-inner-border-radius);
     color: #522db2;
