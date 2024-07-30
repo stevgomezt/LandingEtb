@@ -14,15 +14,16 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <!-- Enlaza el archivo app.js que contiene la lógica de autenticación -->
     <script src="/assets/js/firebaseauth.js" defer></script>
-    <link rel="stylesheet" href="assets/css/login.css">
 
     <style>
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23f3f4f5" fill-opacity="1" d="M0,0L30,48C60,96,120,192,180,218.7C240,245,300,203,360,154.7C420,107,480,53,540,69.3C600,85,660,171,720,224C780,277,840,299,900,309.3C960,320,1020,320,1080,309.3C1140,299,1200,277,1260,229.3C1320,181,1380,107,1410,69.3L1440,32L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>') no-repeat center center fixed;
             background-size: cover;
+            background-color: darkgray !important;
         }
 
         .navbar {
@@ -49,7 +50,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 50px; /* Ajuste para no solaparse con la barra de navegación */
+            margin-top: 50px;
+            /* Ajuste para no solaparse con la barra de navegación */
         }
 
         .header-text {
@@ -59,7 +61,7 @@
             font-size: 2em;
             font-weight: bold;
             padding: 10px;
-            background-color: rgba(0, 0, 0, 0.1);
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
@@ -96,26 +98,33 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
             background-size: cover;
             background-position: center;
-            position: relative; /* Necesario para posicionar el botón */
+            position: relative;
+            /* Necesario para posicionar el botón */
         }
 
         .left {
-            background-image: url('/assets/img/1.png'); /* Ruta de la imagen para el lado izquierdo */
-            background-color: #2ecc71; /* Color verde como fallback */
+            background-image: url('/assets/img/1.png');
+            /* Ruta de la imagen para el lado izquierdo */
+            background-color: #2ecc71;
+            /* Color verde como fallback */
         }
 
         .right {
-            background-image: url('/assets/img/2.png'); /* Ruta de la imagen para el lado derecho */
-            background-color: #3498db; /* Color azul como fallback */
+            background-image: url('/assets/img/2.png');
+            /* Ruta de la imagen para el lado derecho */
+            background-color: #3498db;
+            /* Color azul como fallback */
         }
 
         .inactive {
             filter: grayscale(100%);
-            transform: scale(0.95); /* Escala más pequeña para un efecto más sutil */
+            transform: scale(0.95);
+            /* Escala más pequeña para un efecto más sutil */
         }
 
         .button-text {
-            background: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+            background: rgba(0, 0, 0, 0.6);
+            /* Fondo negro semi-transparente */
             color: white;
             padding: 15px 30px;
             border-radius: 5px;
@@ -127,7 +136,8 @@
         }
 
         .button-text:hover {
-            background: rgba(0, 0, 0, 0.8); /* Fondo negro más oscuro al pasar el ratón */
+            background: rgba(0, 0, 0, 0.8);
+            /* Fondo negro más oscuro al pasar el ratón */
             color: #fff;
         }
 
@@ -145,7 +155,8 @@
         a:hover {
             color: #fff;
             font-size: 2em;
-            transform: scale(1.05); /* Escala más suave */
+            transform: scale(1.05);
+            /* Escala más suave */
         }
     </style>
 </head>

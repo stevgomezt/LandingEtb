@@ -1,5 +1,20 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%238A2BE2" fill-opacity="0.7" d="M0,192L40,186.7C80,181,160,171,240,144C320,117,400,75,480,74.7C560,75,640,117,720,165.3C800,213,880,267,960,288C1040,309,1120,299,1200,261.3C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>')
+        no-repeat center center fixed;
+    background-size: cover;
+    background-color: #d7eaff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-login-form {
-    max-width: 400px;
+    max-width: 700px;
+    width: 500px;
     margin-top: 50px;
     /* Añade margen automático horizontal para centrar */
     margin-left: auto;
@@ -33,13 +48,6 @@
     width: 100%;
 }
 
-body {
-    background: linear-gradient(to bottom right, #d3d3d3, #808080);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .container-login-form {
     background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
