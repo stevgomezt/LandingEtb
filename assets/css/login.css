@@ -68,3 +68,25 @@ html {
 .input-group-login-form input {
     padding-left: 2.5rem;
 }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3d1b94;
+    border-color: #3d1b94;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #704c9f;
+    border-color: #704c9f;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #522db2;
+    border-color: #522db2;
+}

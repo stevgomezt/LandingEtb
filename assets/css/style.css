@@ -2191,3 +2191,34 @@ section {
 .titulos-exp {
     font-size: 22px !important;
 }
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #522db2;
+    --bs-btn-border-color: #522db2;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #704c9f;
+    --bs-btn-hover-border-color: #704c9f;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #704c9f;
+    --bs-btn-active-border-color: #704c9f;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #522db2;
+    --bs-btn-disabled-border-color: #522db2;
+}
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #3d1b94;
+    border-color: #3d1b94;
+}
